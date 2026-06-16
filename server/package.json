@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md-redwanislam/prisma_basic.git"
+  },
+  "author": "Redwan Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/md-redwanislam/prisma_basic/issues"
+  },
+  "homepage": "https://github.com/md-redwanislam/prisma_basic#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prisma": "^6.1.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
