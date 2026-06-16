@@ -1,16 +1,42 @@
-Prisma Setup Commands
+# Prisma Setup Guide
 
-1. Install Prisma
-   npm install -D prisma@6.1.0
-   npm install @prisma/client@6.1.0
-2. Initialize Prisma
-   npx prisma init
-3. Configure the Prisma Schema
+## 1. Install Prisma
 
-Edit the following file:
+```bash
+npm install -D prisma@6.1.0
+npm install @prisma/client@6.1.0
+```
 
-prisma/schema.prisma 4. Push the Database Schema
-npx prisma db push 5. Generate the Prisma Client
+## 2. Initialize Prisma
+
+```bash
+npx prisma init
+```
+
+## 3. Configure Prisma Schema
+
+Edit the Prisma schema file:
+
+```text
+prisma/schema.prisma
+```
+
+Add your database connection and models as needed.
+
+## 4. Generate Prisma Client
+
+```bash
 npx prisma generate
+```
 
-Run npx prisma generate whenever you make changes to prisma/schema.prisma.
+## 5. Push Schema to Database
+
+```bash
+npx prisma db push
+```
+
+## 6. Regenerate Prisma Client (After Schema Changes)
+
+```bash
+npx prisma generate
+```
